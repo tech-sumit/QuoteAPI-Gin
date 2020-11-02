@@ -8,7 +8,9 @@ import (
 
 func main() {
 	//Database Init
-	quote.Init()
+	go func() {
+		quote.Init()
+	}()
 
 	//Server Start
 	router.Run()

@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "fd521b3f-017e-43e8-b17f-cb1e81b100f7",
+		"name": "QuoteApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST - quote",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"author\":\"John Carmack\",\n    \"quote\":\"I'd rather have a search engine or a compiler on a deserted island than a game.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/quote",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"quote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - quote",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/quote",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"quote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT - quote",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"5fa00b591e7fc54445193bb8\",\n    \"author\":\"1test1\",\n    \"quote\":\"1test1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/quote",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"quote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE - quote",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"5f9ff5ed709339ef72d27ca5\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/quote",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"quote"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "11da96b8-b9b8-4bb1-bed0-0e0c9b875b5c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "81171d8b-8bc0-4c8d-a3c8-0add8892501c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "550971df-dd1d-41c7-adbe-2dce626c036d",
+			"key": "host",
+			"value": "http://0.0.0.0:7000"
+		}
+	],
+	"protocolProfileBehavior": {}
+}

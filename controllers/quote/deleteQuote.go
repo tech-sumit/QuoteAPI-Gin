@@ -14,7 +14,11 @@ type DeleteRequestBody struct {
 	ID string `form:"id" json:"id" binding:"required"`
 }
 
-//Delete Quote Handle
+/*** Delete Quote Handle
+ * DELETE - /quote
+ * REQ:{BODY: id :string :required}
+ */
+
 func DeleteQuote(c *gin.Context) {
 	body := UpdateRequestBody{}
 	if c.ShouldBindBodyWith(&body, binding.JSON) != nil {

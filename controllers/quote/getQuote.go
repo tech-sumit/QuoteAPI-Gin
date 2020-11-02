@@ -11,7 +11,10 @@ import (
 	"quote-api/core/models"
 )
 
-//Get Quote Handle
+/*** Get Quote Handle
+ * GET - /quote
+ * REQ:{QUERY: search :string} RES:{[author,quote :string]}
+ */
 func GetQuote(c *gin.Context) {
 	query := c.DefaultQuery("search", "")
 	var err error

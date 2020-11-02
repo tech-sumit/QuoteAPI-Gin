@@ -18,7 +18,11 @@ type UpdateRequestBody struct {
 	Quote  string `form:"quote" json:"quote,omitempty"`
 }
 
-//Update Quote Handle
+/*** Update Quote Handle
+ * PUT - /quote
+ * REQ:{BODY: id,author,quote :string}
+ */
+
 func UpdateQuote(c *gin.Context) {
 	body := UpdateRequestBody{}
 	if c.ShouldBindBodyWith(&body, binding.JSON) != nil {

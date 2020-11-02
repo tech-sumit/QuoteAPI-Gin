@@ -19,7 +19,11 @@ type CreateResponseBody struct {
 	QuoteId interface{} `json:"quoteId"`
 }
 
-//Create Quote Handle
+/*** Create Quote Handle
+ * POST - /quote
+ * REQ:{BODY: author,quote :string :required} RES:{BODY: quoteId :string}
+ */
+
 func CreateQuote(c *gin.Context) {
 	body := CreateRequestBody{}
 	if c.ShouldBindBodyWith(&body, binding.JSON) != nil {

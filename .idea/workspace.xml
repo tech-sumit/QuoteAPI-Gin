@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="36d14c76-e6ea-4bdc-ad14-c97c8e6ea4e5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/quote/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/quote/init.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/quote/createQuote.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/quote/createQuote.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/quote/deleteQuote.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/quote/deleteQuote.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/quote/getQuote.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/quote/getQuote.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/quote/updateQuote.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/quote/updateQuote.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/models/quote.go" beforeDir="false" afterPath="$PROJECT_DIR$/core/models/quote.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
